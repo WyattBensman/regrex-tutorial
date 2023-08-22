@@ -4,7 +4,7 @@ A deep-dive on how to validate email addresses using the email regrex pattern.
 
 ## Summary
 
-The regrex regular expression for matching an email simplifies the process of validating & matching email addresses. This pattern appears as: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+The regrex regular expression for matching an email simplifies the process of validating & matching email addresses. This pattern appears as: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 ## Table of Contents
 
@@ -26,17 +26,17 @@ The regrex regular expression for matching an email simplifies the process of va
 
 Anchors specify the position of a match in the input string.
 
-The anchors that appear in this expression are the '^' & the '$'. The '^' appears at the start of the expression making sure that match occurs at the beginninig of the email address. The '$' appears at the end of the expression and ensures that match ends with the domain portion of an email.
+The anchors that appear in this expression are the `^` & the `$`. The `^` appears at the start of the expression making sure that match occurs at the beginninig of the email address. The '$' appears at the end of the expression and ensures that match ends with the domain portion of an email.
 
 ### Quantifiers
 
 Quantifiers coontrol how many times a preceding element can occur.
 
-The quantifiers in the email regrex is the '+' and the '{2, 6}'. The '+' allows the preceding characters to appear one or more times before the '@' symbol. The '{2, 6}' tells us that the domain extentsion must be between 2 & 6 charcters.
+The quantifiers in the email regrex is the `+` and the `{2, 6}`. The `+` allows the preceding characters to appear one or more times before the `@` symbol. The `{2, 6}` tells us that the domain extentsion must be between 2 & 6 charcters.
 
 ### OR Operator
 
-The OR operator, '|', allows you to match two alternatives.
+The OR operator, `|`, allows you to match two alternatives.
 
 The OR operation is not used inside in the email regrex.
 
@@ -56,7 +56,7 @@ Flags are not used when dealing with the email regrex.
 
 Grouping & Capturing is a way to have multiple characters treated as a single unit.
 
-Grouping & Capturing is utilized when using parentheses '()'. In the email regrex, there are three different grouping scenarios: username, domain name & the domain extension.
+Grouping & Capturing is utilized when using parentheses `()`. In the email regrex, there are three different grouping scenarios: username, domain name & the domain extension.
 
 ### Bracket Expressions
 
